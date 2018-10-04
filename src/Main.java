@@ -3,6 +3,7 @@ import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.Token;
+import utils.Constants;
 import utils.PrintOutput;
 
 import java.util.List;
@@ -11,7 +12,7 @@ public class Main {
 
 	public static void main (String[] args) throws Exception {
 
-		CharStream charStream = CharStreams.fromFileName("HelloWorld.java");
+		CharStream charStream = CharStreams.fromFileName(Constants.FILE_NAME);
 		Scanner scanner = new Scanner(charStream);
 		List<Token> tokens = scan(scanner);
 		Thread.sleep(10);
@@ -31,10 +32,9 @@ public class Main {
 
 	private static void print(List<Token> tokens, Scanner scanner) {
 
-		PrintOutput printOutput = new PrintOutput();
-		printOutput.tokens(tokens);
-		printOutput.symbolTable(tokens);
-		printOutput.graphViz(tokens, scanner);
+		PrintOutput.tokens(tokens, scanner);
+		PrintOutput.symbolTable(tokens, scanner);
+		PrintOutput.graphViz(tokens, scanner);
 
 	}
 

@@ -7,46 +7,51 @@ import java.util.List;
 
 public class PrintOutput {
 
-	public void tokens(List<Token> tokens) {
+	private static GraphViz graphViz;
+
+	static {
+
+		graphViz = new GraphViz();
+
+	}
+
+	public static void tokens(List<Token> tokens, Scanner scanner) {
 
 		System.out.println("Informações de tokens (linha, coluna, tipo, lexema):");
 
-		tokens.forEach(token ->
-				System.out.println(
-						" | " + token.getLine() +
-						" | " + token.getCharPositionInLine() +
-						" | " + token.getType() +
-						" | " + token.getText()));
+		tokens.stream()
+				.filter(token -> token.getType() != Token.EOF)
+				.forEach(token -> System.out.println(
+						" |   " + token.getLine() +
+						" |   " + token.getCharPositionInLine() +
+						" |   " + scanner.getVocabulary().getSymbolicName(token.getType()) +
+						" |   " + token.getText()));
 
 	}
 
-	public void symbolTable(List<Token> tokens) {
+	public static void symbolTable(List<Token> tokens, Scanner scanner) {
 
-		System.out.println("\nTabela de símbolos (entrada, lexema, tipo):");
+		System.out.println("\nTabela de símbolos (entrada, tipo, lexema):");
 
-		tokens.forEach(token ->
-				System.out.println(
-						" | " + token.getTokenIndex() +
-						" | " + token.getText() +
-						" | " + token.getType()));
+		tokens.stream()
+				.filter(token -> token.getType() != Token.EOF)
+				.forEach(token -> System.out.println(
+						" |   " + token.getTokenIndex() +
+						" |   " + scanner.getVocabulary().getSymbolicName(token.getType()) +
+						" |   " + token.getText()));
 
 	}
 
-	public void graphViz(List<Token> tokens, Scanner scanner) {
-
-		GraphViz graphViz = new GraphViz();
+	public static void graphViz(List<Token> tokens, Scanner scanner) {
 
 		tokens.forEach(token -> {
 
 			if(token.getType() != Token.EOF) {
 
-				String prefixName = "Scanner." + scanner.getVocabulary().getSymbolicName(token.getType());
-
-				graphViz.readSource("resources/dots/" + prefixName +  ".dot");
-
-				byte[] img = graphViz.getGraph(graphViz.getDotSource(), "png", "dot");
-
-				graphViz.writeGraphToFile(img, "resources/afd/" + prefixName + ".png");
+				String prefixName = Constants.DOT_FILE_PREFIX + scanner.getVocabulary().getSymbolicName(token.getType());
+				graphViz.readSource(Constants.DOT_PATH + prefixName + "." + Constants.DOT);
+				byte[] img = graphViz.getGraph(graphViz.getDotSource(), Constants.PNG, Constants.DOT);
+				graphViz.writeGraphToFile(img, Constants.AFD_PATH + prefixName + "." + Constants.PNG);
 
 			}
 
