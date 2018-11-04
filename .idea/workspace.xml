@@ -2,16 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9ffed56-bd02-43d1-9d96-29f4854b8be0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/analisador-lexico.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/antlr_4_7_1_complete1.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/antlr_4_7_1_complete.xml" afterPath="$PROJECT_DIR$/.idea/libraries/antlr_4_7_1_complete.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld.java" afterPath="$PROJECT_DIR$/resources/files/HelloWorld.java" />
-      <change beforePath="$PROJECT_DIR$/analisador-lexico.iml" afterPath="$PROJECT_DIR$/analisador.iml" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Analisador.java" />
-      <change beforePath="$PROJECT_DIR$/src/lex/Scanner.g4" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/lex/Scanner.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/lex/Scanner.tokens" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/utils/Constants.java" afterPath="$PROJECT_DIR$/src/utils/Constants.java" />
-      <change beforePath="$PROJECT_DIR$/src/utils/PrintOutput.java" afterPath="$PROJECT_DIR$/src/utils/PrintOutput.java" />
+      <change beforePath="$PROJECT_DIR$/analisador.iml" afterPath="$PROJECT_DIR$/analisador.iml" />
+      <change beforePath="$PROJECT_DIR$/generate-dots.sh" afterPath="$PROJECT_DIR$/generate-dots.sh" />
+      <change beforePath="$PROJECT_DIR$/resources/afd/Scanner.CLASS.png" afterPath="$PROJECT_DIR$/resources/afd/Scanner.CLASS.png" />
+      <change beforePath="$PROJECT_DIR$/resources/afd/Scanner.DOT.png" afterPath="$PROJECT_DIR$/resources/afd/Scanner.DOT.png" />
+      <change beforePath="$PROJECT_DIR$/resources/afd/Scanner.Identifier.png" afterPath="$PROJECT_DIR$/resources/afd/Scanner.Identifier.png" />
+      <change beforePath="$PROJECT_DIR$/resources/afd/Scanner.LBRACE.png" afterPath="$PROJECT_DIR$/resources/afd/Scanner.LBRACE.png" />
+      <change beforePath="$PROJECT_DIR$/resources/afd/Scanner.LBRACK.png" afterPath="$PROJECT_DIR$/resources/afd/Scanner.LBRACK.png" />
+      <change beforePath="$PROJECT_DIR$/resources/afd/Scanner.LPAREN.png" afterPath="$PROJECT_DIR$/resources/afd/Scanner.LPAREN.png" />
+      <change beforePath="$PROJECT_DIR$/resources/afd/Scanner.PUBLIC.png" afterPath="$PROJECT_DIR$/resources/afd/Scanner.PUBLIC.png" />
+      <change beforePath="$PROJECT_DIR$/resources/afd/Scanner.RBRACE.png" afterPath="$PROJECT_DIR$/resources/afd/Scanner.RBRACE.png" />
+      <change beforePath="$PROJECT_DIR$/resources/afd/Scanner.RBRACK.png" afterPath="$PROJECT_DIR$/resources/afd/Scanner.RBRACK.png" />
+      <change beforePath="$PROJECT_DIR$/resources/afd/Scanner.RPAREN.png" afterPath="$PROJECT_DIR$/resources/afd/Scanner.RPAREN.png" />
+      <change beforePath="$PROJECT_DIR$/resources/afd/Scanner.SEMI.png" afterPath="$PROJECT_DIR$/resources/afd/Scanner.SEMI.png" />
+      <change beforePath="$PROJECT_DIR$/resources/afd/Scanner.STATIC.png" afterPath="$PROJECT_DIR$/resources/afd/Scanner.STATIC.png" />
+      <change beforePath="$PROJECT_DIR$/resources/afd/Scanner.StringLiteral.png" afterPath="$PROJECT_DIR$/resources/afd/Scanner.StringLiteral.png" />
+      <change beforePath="$PROJECT_DIR$/resources/afd/Scanner.VOID.png" afterPath="$PROJECT_DIR$/resources/afd/Scanner.VOID.png" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,8 +36,8 @@
       <file leaf-file-name="Analisador.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Analisador.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="25" column="70" lean-forward="true" selection-start-line="25" selection-start-column="70" selection-end-line="25" selection-end-column="70" />
+            <state relative-caret-position="309">
+              <caret line="25" column="70" lean-forward="false" selection-start-line="25" selection-start-column="70" selection-end-line="25" selection-end-column="70" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,7 +68,7 @@
       <file leaf-file-name="PrintOutput.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utils/PrintOutput.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-66">
+            <state relative-caret-position="792">
               <caret line="44" column="70" lean-forward="false" selection-start-line="44" selection-start-column="70" selection-end-line="44" selection-end-column="70" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -70,7 +80,7 @@
       <file leaf-file-name="Scanner.g4" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/antlr/Scanner.g4">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
+            <state relative-caret-position="2898">
               <caret line="168" column="55" lean-forward="false" selection-start-line="168" selection-start-column="55" selection-end-line="168" selection-end-column="55" />
               <folding />
             </state>
@@ -172,8 +182,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -201,8 +212,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -321,11 +331,12 @@
       <workItem from="1541189183969" duration="7752000" />
       <workItem from="1541354335682" duration="1874000" />
       <workItem from="1541365300951" duration="2948000" />
+      <workItem from="1541368696771" duration="4000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48743000" />
+    <option name="totallyTimeSpent" value="48747000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -338,23 +349,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="105" width="1920" height="1053" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14269535" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.49786323" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3250283" sideWeight="0.50213677" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3997735" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997735" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19705549" sideWeight="0.49786323" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.303953" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30769232" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="ANTLR Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.596829" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -368,6 +377,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Anonymous Apex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="SOQL Query" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -580,7 +590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -700,7 +709,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/antlr/Scanner.g4">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
+        <state relative-caret-position="2898">
           <caret line="168" column="55" lean-forward="false" selection-start-line="168" selection-start-column="55" selection-end-line="168" selection-end-column="55" />
           <folding />
         </state>
@@ -708,7 +717,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/PrintOutput.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-66">
+        <state relative-caret-position="792">
           <caret line="44" column="70" lean-forward="false" selection-start-line="44" selection-start-column="70" selection-end-line="44" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -725,7 +734,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -747,8 +755,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Analisador.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="25" column="70" lean-forward="true" selection-start-line="25" selection-start-column="70" selection-end-line="25" selection-end-column="70" />
+        <state relative-caret-position="309">
+          <caret line="25" column="70" lean-forward="false" selection-start-line="25" selection-start-column="70" selection-end-line="25" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
