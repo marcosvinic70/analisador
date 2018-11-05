@@ -34,7 +34,7 @@ public class DezErros {
 
 	}
 
-	private void reservedWord() {
+	private void reservedWordOutOfContext() {
 
 		boolean a = while false;
 
