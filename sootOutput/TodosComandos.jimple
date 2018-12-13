@@ -1,0 +1,509 @@
+public class TodosComandos extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        word r0;
+
+        r0 := @this: TodosComandos;
+
+        load.r r0;
+
+        specialinvoke <java.lang.Object: void <init>()>;
+
+        return;
+    }
+
+    private void _for()
+    {
+        word r7, i0, f2;
+
+        r7 := @this: TodosComandos;
+
+        push 0.0F;
+
+        store.f r7;
+
+        push 0;
+
+        store.i i0;
+
+     label1:
+        load.i i0;
+
+        push 40;
+
+        ifcmpgt.i label2;
+
+        push 3.14F;
+
+        load.f r7;
+
+        f2d;
+
+        push 3.0;
+
+        staticinvoke <java.lang.Math: double pow(double,double)>;
+
+        d2f;
+
+        mul.f;
+
+        store.f f2;
+
+        staticget <java.lang.System: java.io.PrintStream out>;
+
+        new java.lang.StringBuilder;
+
+        dup1.r;
+
+        specialinvoke <java.lang.StringBuilder: void <init>()>;
+
+        push "Para raio: ";
+
+        virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>;
+
+        load.f r7;
+
+        virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(float)>;
+
+        push " o volume \u00e9: ";
+
+        virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>;
+
+        load.f f2;
+
+        virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(float)>;
+
+        virtualinvoke <java.lang.StringBuilder: java.lang.String toString()>;
+
+        virtualinvoke <java.io.PrintStream: void println(java.lang.String)>;
+
+        load.f r7;
+
+        push 0.5F;
+
+        add.f;
+
+        store.f r7;
+
+        inc.i i0 1;
+
+        goto label1;
+
+     label2:
+        return;
+    }
+
+    private void _while()
+    {
+        word r7, f2;
+
+        r7 := @this: TodosComandos;
+
+        push 0.0F;
+
+        store.f r7;
+
+     label1:
+        load.f r7;
+
+        push 20.0F;
+
+        cmpg.f;
+
+        ifgt label2;
+
+        push 3.14F;
+
+        load.f r7;
+
+        f2d;
+
+        push 3.0;
+
+        staticinvoke <java.lang.Math: double pow(double,double)>;
+
+        d2f;
+
+        mul.f;
+
+        store.f f2;
+
+        staticget <java.lang.System: java.io.PrintStream out>;
+
+        new java.lang.StringBuilder;
+
+        dup1.r;
+
+        specialinvoke <java.lang.StringBuilder: void <init>()>;
+
+        push "Para raio: ";
+
+        virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>;
+
+        load.f r7;
+
+        virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(float)>;
+
+        push " o volume \u00e9: ";
+
+        virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>;
+
+        load.f f2;
+
+        virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(float)>;
+
+        virtualinvoke <java.lang.StringBuilder: java.lang.String toString()>;
+
+        virtualinvoke <java.io.PrintStream: void println(java.lang.String)>;
+
+        load.f r7;
+
+        push 0.5F;
+
+        add.f;
+
+        store.f r7;
+
+        goto label1;
+
+     label2:
+        return;
+    }
+
+    private void arithmeticOperators()
+    {
+        word r0;
+
+        r0 := @this: TodosComandos;
+
+        return;
+    }
+
+    private void comments()
+    {
+        word r0;
+
+        r0 := @this: TodosComandos;
+
+        return;
+    }
+
+    private void dataInput()
+    {
+        word r3;
+
+        r3 := @this: TodosComandos;
+
+        new java.util.Scanner;
+
+        store.r r3;
+
+        load.r r3;
+
+        staticget <java.lang.System: java.io.InputStream in>;
+
+        specialinvoke <java.util.Scanner: void <init>(java.io.InputStream)>;
+
+        load.r r3;
+
+        virtualinvoke <java.util.Scanner: int nextInt()>;
+
+        pop;
+
+        load.r r3;
+
+        virtualinvoke <java.util.Scanner: float nextFloat()>;
+
+        pop;
+
+        load.r r3;
+
+        virtualinvoke <java.util.Scanner: double nextDouble()>;
+
+        pop;
+
+        load.r r3;
+
+        virtualinvoke <java.util.Scanner: java.lang.String next()>;
+
+        pop;
+
+        load.r r3;
+
+        virtualinvoke <java.util.Scanner: java.lang.String next()>;
+
+        push 0;
+
+        virtualinvoke <java.lang.String: char charAt(int)>;
+
+        pop;
+
+        return;
+    }
+
+    private void dataOutput()
+    {
+        word r0;
+
+        r0 := @this: TodosComandos;
+
+        staticget <java.lang.System: java.io.PrintStream out>;
+
+        push "Teste";
+
+        virtualinvoke <java.io.PrintStream: void println(java.lang.String)>;
+
+        return;
+    }
+
+    private void doWhile()
+    {
+        word r7, f2;
+
+        r7 := @this: TodosComandos;
+
+        push 0.0F;
+
+        store.f r7;
+
+     label1:
+        push 3.14F;
+
+        load.f r7;
+
+        f2d;
+
+        push 3.0;
+
+        staticinvoke <java.lang.Math: double pow(double,double)>;
+
+        d2f;
+
+        mul.f;
+
+        store.f f2;
+
+        staticget <java.lang.System: java.io.PrintStream out>;
+
+        new java.lang.StringBuilder;
+
+        dup1.r;
+
+        specialinvoke <java.lang.StringBuilder: void <init>()>;
+
+        push "Para raio: ";
+
+        virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>;
+
+        load.f r7;
+
+        virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(float)>;
+
+        push " o volume \u00e9: ";
+
+        virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>;
+
+        load.f f2;
+
+        virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(float)>;
+
+        virtualinvoke <java.lang.StringBuilder: java.lang.String toString()>;
+
+        virtualinvoke <java.io.PrintStream: void println(java.lang.String)>;
+
+        load.f r7;
+
+        push 0.5F;
+
+        add.f;
+
+        store.f r7;
+
+        load.f r7;
+
+        push 20.0F;
+
+        cmpg.f;
+
+        iflt label1;
+
+        return;
+    }
+
+    private void ifElseElseIf()
+    {
+        word r3;
+
+        r3 := @this: TodosComandos;
+
+        push "azul";
+
+        store.r r3;
+
+        load.r r3;
+
+        push "azul";
+
+        virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>;
+
+        ifeq label1;
+
+        staticget <java.lang.System: java.io.PrintStream out>;
+
+        push "A cor \u00e9 azul";
+
+        virtualinvoke <java.io.PrintStream: void println(java.lang.String)>;
+
+        goto label3;
+
+     label1:
+        load.r r3;
+
+        push "vermelho";
+
+        virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>;
+
+        ifeq label2;
+
+        staticget <java.lang.System: java.io.PrintStream out>;
+
+        push "A cor \u00e9 vermelha";
+
+        virtualinvoke <java.io.PrintStream: void println(java.lang.String)>;
+
+        goto label3;
+
+     label2:
+        staticget <java.lang.System: java.io.PrintStream out>;
+
+        push "A cor n\u00e3o \u00e9 azul e nem vermelha";
+
+        virtualinvoke <java.io.PrintStream: void println(java.lang.String)>;
+
+     label3:
+        return;
+    }
+
+    private void logicalOperators()
+    {
+        word r0;
+
+        r0 := @this: TodosComandos;
+
+        goto label1;
+
+     label1:
+        goto label2;
+
+     label2:
+        goto label3;
+
+     label3:
+        goto label4;
+
+     label4:
+        return;
+    }
+
+    private void relationalOperators()
+    {
+        word r0;
+
+        r0 := @this: TodosComandos;
+
+        goto label1;
+
+     label1:
+        goto label2;
+
+     label2:
+        goto label3;
+
+     label3:
+        goto label4;
+
+     label4:
+        goto label5;
+
+     label5:
+        goto label6;
+
+     label6:
+        return;
+    }
+
+    private void switchCase()
+    {
+        word r0;
+
+        r0 := @this: TodosComandos;
+
+        push 1;
+
+        tableswitch
+        {
+            case 1: goto label1;
+            case 2: goto label2;
+            case 3: goto label3;
+            case 4: goto label4;
+            default: goto label5;
+        };
+
+     label1:
+        staticget <java.lang.System: java.io.PrintStream out>;
+
+        push "valor => 1";
+
+        virtualinvoke <java.io.PrintStream: void println(java.lang.String)>;
+
+        goto label6;
+
+     label2:
+        staticget <java.lang.System: java.io.PrintStream out>;
+
+        push "valor => 2";
+
+        virtualinvoke <java.io.PrintStream: void println(java.lang.String)>;
+
+        goto label6;
+
+     label3:
+        staticget <java.lang.System: java.io.PrintStream out>;
+
+        push "valor => 3";
+
+        virtualinvoke <java.io.PrintStream: void println(java.lang.String)>;
+
+        goto label6;
+
+     label4:
+        staticget <java.lang.System: java.io.PrintStream out>;
+
+        push "valor => 4";
+
+        virtualinvoke <java.io.PrintStream: void println(java.lang.String)>;
+
+        goto label6;
+
+     label5:
+        staticget <java.lang.System: java.io.PrintStream out>;
+
+        push "valor => 0";
+
+        virtualinvoke <java.io.PrintStream: void println(java.lang.String)>;
+
+     label6:
+        return;
+    }
+
+    private void variableDeclarations()
+    {
+        word r0;
+
+        r0 := @this: TodosComandos;
+
+        return;
+    }
+}
